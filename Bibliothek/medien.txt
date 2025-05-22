@@ -1,0 +1,8 @@
+Bucher
+CDs
+1;qwq;qwq;12;1;1
+Horbucher
+2;iko;loaw;34;56;0;1;2
+Kunden
+1;maxi
+2;moahe
