@@ -1,0 +1,29 @@
+Adresse
+PoI
+0;8.63901;49.8717;Hoschule;Fachbereich Informatik;Hoschule Darmsatdt
+1;13.3989;52.71;Haupstadt;Berlin;Berlin
+2;11.5754;48.1371;Stadt;Bayern;Muenchen
+3;8.80716;53.2;Stadt;NordOest;Bremen
+4;13.7381;51.0493;Stadt;Sachsen;Dresden
+5;9.18001;48.7784;Stadt;Baden-Wuttenberg;Stuttgart
+6;11.0773;49.4539;Stadt;Bayern;Nurnberg
+7;6.99638;49.3344;Stadt;Saarland;Saarbrucken
+8;8.63991;49.8668;Hohschule;Hessen;h-da
+9;9.732;52.3759;stadt;Niedersachsen;Hannover
+10;5.866;55.058;point;point;oben links
+11;14.842;48.051;point;point;unten recht
+12;13.0645;52.3906;stadt;Brandenburg;Postdam
+13;9.998;53.69;stadt;Hamburg;Hamburg
+14;8.2398;50.0782;stadt;Hessen;Wiesbaden
+15;11.4012;53.6355;stadt;MecklenburgVorpommern;Schwerin
+16;11.6276;52.1205;stadt;SachsenAnhalt;Magdeburg
+17;11.0299;50.9848;stadt;Thuringen;Erfurt
+18;8.1473;49.9929;stadt;RheinlandPfalz;Mainz
+19;6.7735;51.2277;stadt;NordrheinWestfalen;Dusseldorf
+20;10.1228;54.3233;stadt;SchleswigHolstein;Kiel
+21;13.4319;48.5667;stadt;Bayern;Passau
+22;9.1732;47.6779;stadt;BadenWurttemberg;Konstanz
+23;14.3329;51.7563;stadt;Brandenburg;Cottbus
+24;7.88894;54.1803;stadt;Helgoland;Lange Anna
+25;9.4797;51.3127;Kassel;POI;Kassel
+26;12.9214;50.8278;Chemnitz;POI;Chemnitz
