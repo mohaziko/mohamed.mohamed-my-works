@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/_arrival.svg</file>
+        <file>icons/_delete.svg</file>
+        <file>icons/_departure.svg</file>
+        <file>icons/_help.svg</file>
+        <file>icons/baumkrone.svg</file>
+        <file>icons/beenden.svg</file>
+        <file>icons/bergplateau.svg</file>
+        <file>icons/drache.svg</file>
+        <file>icons/drachenflug.svg</file>
+        <file>icons/drachenreise.svg</file>
+        <file>icons/einlesen.svg</file>
+        <file>icons/flug.svg</file>
+        <file>icons/nachtlager.svg</file>
+        <file>icons/passagier.svg</file>
+        <file>icons/reiseplan.svg</file>
+        <file>icons/speichern.svg</file>
+        <file>icons/suchen.svg</file>
+        <file>icons/draggonport.svg</file>
+        <file>icons/poi.svg</file>
+        <file>icons/hoehle.svg</file>
+    </qresource>
+</RCC>

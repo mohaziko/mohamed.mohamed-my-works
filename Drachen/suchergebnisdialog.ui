@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SuchergebnisDialog</class>
+ <widget class="QDialog" name="SuchergebnisDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Name des Passagiers:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPassagierName">
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonSuche">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Users/moham/Downloads/icons/suchen.svg</normaloff>../../Users/moham/Downloads/icons/suchen.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBoxPassagier">
+         <property name="title">
+          <string>Reisepläne als Passagier</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetPassagier">
+            <column>
+             <property name="text">
+              <string>PlanNr.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PlanName</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ReiseBeginn</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ReiseEnde</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Preis</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBoxPlayer">
+         <property name="title">
+          <string>Reisepläne als Player</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetPlayer">
+            <column>
+             <property name="text">
+              <string>PlanNr.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PlanName</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ReiseBeginn</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ReiseEnde</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Preis</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Reiseabschnitte</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="WidgetReiseabschnitte">
+            <column>
+             <property name="text">
+              <string>Typ</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Ziel/Lagerort</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Abfahrt</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Ankunft</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Preis</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

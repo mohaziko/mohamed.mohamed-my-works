@@ -1,0 +1,98 @@
+{
+    "poi1": {
+        "latitude": -45.532345,
+        "longitude": 167.643158,
+        "name": "Draggonport Te Anau",
+        "typ": "Draggonport"
+    },
+    "poi10": {
+        "latitude": -45.360528,
+        "longitude": 167.378139,
+        "name": "Flüstergrotte Grollschlund",
+        "typ": "Höhle"
+    },
+    "poi11": {
+        "latitude": -45.529793,
+        "longitude": 167.258567,
+        "name": "Spey River Nebelkluft",
+        "typ": "Höhle"
+    },
+    "poi12": {
+        "latitude": -45.699596,
+        "longitude": 167.624468,
+        "name": "TeMatua Rakatu Wetlands",
+        "typ": "Baumkrone"
+    },
+    "poi13": {
+        "latitude": -45.46252423,
+        "longitude": 167.7736587,
+        "name": "TaneMahuta Kakapo Swamp",
+        "typ": "Baumkrone"
+    },
+    "poi14": {
+        "latitude": -45.469523,
+        "longitude": 167.3436272,
+        "name": "WaioraKauri RedCliff Wetland",
+        "typ": "Baumkrone"
+    },
+    "poi15": {
+        "latitude": -45.350311,
+        "longitude": 167.907998,
+        "name": "RakauNui Fangorn Forest",
+        "typ": "Baumkrone"
+    },
+    "poi16": {
+        "latitude": -45.521591,
+        "longitude": 167.684798,
+        "name": "Keppler Mire",
+        "typ": "Baumkrone"
+    },
+    "poi2": {
+        "latitude": -45.505983,
+        "longitude": 167.471903,
+        "name": "Dracheninsel",
+        "typ": "Draggonport"
+    },
+    "poi3": {
+        "latitude": -45.213259,
+        "longitude": 167.69696,
+        "name": "Vulkaninsel Te Kaukaroa",
+        "typ": "Draggonport"
+    },
+    "poi4": {
+        "latitude": -45.294961,
+        "longitude": 167.727261,
+        "name": "Glow Worm Cave",
+        "typ": "Höhle"
+    },
+    "poi5": {
+        "latitude": -45.239069,
+        "longitude": 168.006782,
+        "name": "Vulkan Dunton",
+        "typ": "Bergplateau"
+    },
+    "poi6": {
+        "latitude": -45.732359,
+        "longitude": 167.278513,
+        "name": "Glutkamm Putaketeke",
+        "typ": "Bergplateau"
+    },
+    "poi7": {
+        "latitude": -45.232089,
+        "longitude": 167.273025,
+        "name": "Lavagrimm Coronation Peak",
+        "typ": "Bergplateau"
+    },
+    "poi8": {
+        "latitude": -45.633829,
+        "longitude": 167.824499,
+        "name": "Rauchzahn Excelcior Peak",
+        "typ": "Bergplateau"
+    },
+    "poi9": {
+        "latitude": -45.389301,
+        "longitude": 167.615936,
+        "name": "Luxmore Gluthöhle",
+        "typ": "Höhle"
+    }
+}

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Drachenflug-Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QListWidget" name="drachenListWidget"/>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsViewMap"/>
+      </item>
+      <item>
+       <widget class="QSlider" name="horizontalSliderZoom">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_drachenDetails">
+        <property name="text">
+         <string>Details zum Drachen:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="detailTextEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Plaene">
+        <property name="text">
+         <string>Reisepläne</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="reisePlanListWidget"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_reisen">
+        <property name="text">
+         <string>Drachenreisen:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="reiseListWidget"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_drachenflugDetails">
+        <property name="text">
+         <string>Details zur Drachenreise:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="reiseDetailsListWidget"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="buttonLayout">
+        <item>
+         <widget class="QPushButton" name="addDracheButton">
+          <property name="text">
+           <string>Drache hinzufügen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addReiseplanButton">
+          <property name="text">
+           <string>Reiseplan hinzufügen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addDrachenreiseButton">
+          <property name="text">
+           <string>Reise hinzufügen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addPassengerButton">
+          <property name="text">
+           <string>Passagier buchen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveButton">
+          <property name="text">
+           <string>Speichern</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="actionEinlesen"/>
+    <addaction name="actionSpeichern"/>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuDrache_L_schen">
+    <property name="title">
+     <string>löschen</string>
+    </property>
+    <addaction name="actionDrache_l_schen"/>
+    <addaction name="actionReiseplan_l_schen"/>
+    <addaction name="actionDrachereise_l_schen"/>
+    <addaction name="actionPassagier_l_schen"/>
+   </widget>
+   <widget class="QMenu" name="menusuchen">
+    <property name="title">
+     <string>suchen</string>
+    </property>
+    <addaction name="actionPerson_suchen"/>
+    <addaction name="actionLandkarte_suchen"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuDrache_L_schen"/>
+   <addaction name="menusuchen"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionEinlesen"/>
+   <addaction name="actionPerson_suchen"/>
+   <addaction name="actionLandkarte_suchen"/>
+   <addaction name="actionSpeichern"/>
+   <addaction name="actionBeenden"/>
+   <addaction name="actionDrache_l_schen"/>
+   <addaction name="actionReiseplan_l_schen"/>
+   <addaction name="actionDrachereise_l_schen"/>
+   <addaction name="actionPassagier_l_schen"/>
+  </widget>
+  <action name="actionEinlesen">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/einlesen.svg</normaloff>../../Users/moham/Downloads/icons/einlesen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Einlesen</string>
+   </property>
+  </action>
+  <action name="actionSpeichern">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/speichern.svg</normaloff>../../Users/moham/Downloads/icons/speichern.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Speichern</string>
+   </property>
+  </action>
+  <action name="actionBeenden">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/beenden.svg</normaloff>../../Users/moham/Downloads/icons/beenden.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+  <action name="actionDrache_L_schen">
+   <property name="text">
+    <string>Drache Löschen</string>
+   </property>
+  </action>
+  <action name="actionReiseplan_L_schen">
+   <property name="text">
+    <string>Reiseplan Löschen</string>
+   </property>
+  </action>
+  <action name="actionDrachereise_L_schen">
+   <property name="text">
+    <string>Drachereise Löschen</string>
+   </property>
+  </action>
+  <action name="actionPassagier_L_schen">
+   <property name="text">
+    <string>Passagier Löschen</string>
+   </property>
+  </action>
+  <action name="actionDrache_l_schen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/drache.svg</normaloff>../../Users/moham/Downloads/icons/drache.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Drache löschen</string>
+   </property>
+  </action>
+  <action name="actionReiseplan_l_schen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/reiseplan.svg</normaloff>../../Users/moham/Downloads/icons/reiseplan.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Reiseplan löschen</string>
+   </property>
+  </action>
+  <action name="actionDrachereise_l_schen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/drachenreise.svg</normaloff>../../Users/moham/Downloads/icons/drachenreise.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Drachereise löschen</string>
+   </property>
+  </action>
+  <action name="actionPassagier_l_schen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/passagier.svg</normaloff>../../Users/moham/Downloads/icons/passagier.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Passagier löschen</string>
+   </property>
+  </action>
+  <action name="actionEinlesen_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/einlesen.svg</normaloff>../../Users/moham/Downloads/icons/einlesen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Einlesen</string>
+   </property>
+  </action>
+  <action name="actionPerson_suchen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Users/moham/Downloads/icons/suchen.svg</normaloff>../../Users/moham/Downloads/icons/suchen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Person suchen</string>
+   </property>
+  </action>
+  <action name="actionLandkarte_suchen">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/landkarte.svg</normaloff>icons/landkarte.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Landkarte
+suchen</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
