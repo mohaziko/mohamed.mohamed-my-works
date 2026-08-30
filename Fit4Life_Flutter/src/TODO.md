@@ -1,0 +1,5 @@
+- Add shared_preferences dependency to pubspec.yaml ✓
+- Modify chat.dart to add message list, load/save from shared_preferences ✓
+- Add send button to TextField ✓
+- Display messages in ListView ✓
+- Test persistence after restart ✓
