@@ -23,7 +23,6 @@ A curated portfolio of university and personal software engineering projects bui
 | [`./Navigation von Deutschland`](./Navigation%20von%20Deutschland) | C++17, Qt Widgets, QTest | German city-graph route planner implementing Dijkstra's shortest-path algorithm + unit tests |
 | [`./Calculator`](./Calculator) | C++17, Qt Widgets, QTest | Desktop calculator with custom `anglefunctor` math evaluation and automated unit tests |
 | [`./Bibliothek`](./Bibliothek) | C++17 (OOP / Console) | Polymorphic library management system (`Medien`, `Buch`, `CD`, `Hoerbuch`, `Kunde`) |
-| [`./Python`](./Python) | Python, OpenCV, SQLite3, Tkinter, Sockets | Collection of computer vision, TCP socket chat, SQLite autocomplete, and algorithm projects |
 
 ---
 
@@ -57,16 +56,9 @@ Qt Widgets desktop calculator (`Calculatorrr.pro`) pairing UI forms (`mainwindow
 ### 5. Bibliothek ([`./Bibliothek`](./Bibliothek))
 C++17 OOP console system (`lj.pro`) demonstrating inheritance and polymorphism across `Medien` subclasses (`Buch`, `CD`, `Hoerbuch`), customer management (`Kunde`), and file persistence (`medien.txt`).
 
-### 6. Python Projects ([`./Python`](./Python))
-- **`AutoComplete_App`:** Bigram word-prediction engine backed by **SQLite (`sqlite3`)** (`WordMap` & `WordPrediction` tables) with a `Tkinter` GUI (`frontend.py`, `backend.py`).
-- **`Face and eye Recognition`:** Real-time Haar-cascade face/eye detection via webcam and hand contour/convex-hull thresholding (`OpenCV` / `cv2`).
-- **`chatting_application`:** Multi-threaded TCP chat room built with Python `socket` and `threading` (`server.py`, `client.py`).
-- **`BlackJack_game` & `bitcoin_mining`:** Interactive console Blackjack gameplay/simulation and SHA-256 nonce-mining demonstration (`hashlib`).
-- **`Python Programs`:** Classic data-structure and recursion exercises (linked-list reversal, Tower of Hanoi, matrix transposition, sorting).
-
 ---
 
 ## Tech Stack
 - **Languages:** C++ (C++17), Dart, Python
-- **Frameworks & Libraries:** Qt (`Core`, `GUI`, `Widgets`, `Network`, `TestLib`), Flutter (`provider`, `hive_ce`, `qr_flutter`, `flutter_local_notifications`), `nlohmann/json`, OpenCV (`cv2`), Tkinter, SQLite3
+- **Frameworks & Libraries:** Qt (`Core`, `GUI`, `Widgets`, `Network`, `TestLib`), Flutter (`provider`, `hive_ce`, `qr_flutter`, `flutter_local_notifications`), `nlohmann/json`
 - **Engineering & CI:** Git, GitLab CI (`.gitlab-ci.yml`), Linux, QTest, `flutter_test`
