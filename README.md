@@ -1,93 +1,72 @@
-# my works
+# Mohamed Mohamed – Software Engineering Portfolio
 
+![C++17](https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Qt](https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 
+A curated portfolio of university and personal software engineering projects built during my **B.Sc. Information Technology** studies at **Hochschule Darmstadt**, covering **C++17 / Qt**, **Flutter / Dart**, **Python**, object-oriented design, and automated testing.
 
-## Getting started
+- **GitHub:** [@mohaziko](https://github.com/mohaziko)
+- **Contact:** mohamedarbeit99@gmail.com
+- **Location:** Darmstadt, Germany
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+---
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Repository Overview
 
-## Add your files
+| Folder | Stack | Focus |
+|---|---|---|
+| [`./Fit4Life_Flutter`](./Fit4Life_Flutter) | Flutter, Dart, Provider, Hive | Full cross-platform fitness, nutrition & social app (standalone repo: [`Fit4Life_Flutter`](https://github.com/mohaziko/Fit4Life_Flutter)) |
+| [`./Drachen`](./Drachen) | C++17, Qt Widgets, `QGraphicsScene`, `nlohmann/json` | Interactive map & dragon-flight travel planner with SVG layers and Haversine POI distances |
+| [`./Navigation von Deutschland`](./Navigation%20von%20Deutschland) | C++17, Qt Widgets, QTest | German city-graph route planner implementing Dijkstra's shortest-path algorithm + unit tests |
+| [`./Calculator`](./Calculator) | C++17, Qt Widgets, QTest | Desktop calculator with custom `anglefunctor` math evaluation and automated unit tests |
+| [`./Bibliothek`](./Bibliothek) | C++17 (OOP / Console) | Polymorphic library management system (`Medien`, `Buch`, `CD`, `Hoerbuch`, `Kunde`) |
+| [`./Python`](./Python) | Python, OpenCV, SQLite3, Tkinter, Sockets | Collection of computer vision, TCP socket chat, SQLite autocomplete, and algorithm projects |
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+---
 
-```
-cd existing_repo
-git remote add origin https://code.fbi.h-da.de/mohamed.mohamed/my-works.git
-git branch -M main
-git push -uf origin main
-```
+## Project Highlights
 
-## Integrate with your tools
+### 1. Fit4Life – Cross-Platform Fitness App ([`./Fit4Life_Flutter`](./Fit4Life_Flutter))
+Modular Flutter application structured into `pages/`, `handler/`, `crud/`, `models/`, and `data/`:
+- **State & Local Persistence:** `provider` for reactive UI state and `hive_ce` / `hive_ce_flutter` for offline data storage (`foodcrud`, `trainingcrud`, `profilcrud`, `statisticscrud`).
+- **Features:** Workout & meal tracking, progress semicircle & analytics views, local notifications (`flutter_local_notifications`), QR contact/profile sharing (`qr_flutter`), social/chat pages, and image picking/sharing.
+- **Run locally:**
+  ```bash
+  cd Fit4Life_Flutter/src
+  flutter pub get
+  flutter test
+  flutter run
+  ```
 
-- [ ] [Set up project integrations](https://code.fbi.h-da.de/mohamed.mohamed/my-works/-/settings/integrations)
+### 2. Drachen – Qt Map & Travel Planner ([`./Drachen`](./Drachen))
+Desktop Qt application (`Filmstudio_Aufgabe8_Ausgangsbasis.pro`) inspired by *How to Train Your Dragon*:
+- **Graphics & UI:** Custom `QGraphicsScene` canvas (`Kartenszene`), SVG POI map layers (`DragonMap`, `DragonPOILayer`, `icons.qrc`), and custom dialogs (`DrachenflugDialog`, `NachtlagerDialog`, `SuchergebnisDialog`).
+- **Architecture & Data:** Polymorphic `Drache` class hierarchy, Haversine distance calculations across POIs, `Reiseplan` management, and JSON persistence via `nlohmann/json` (`filmstudio.json`, `poi.json`).
 
-## Collaborate with your team
+### 3. Navigation von Deutschland ([`./Navigation von Deutschland`](./Navigation%20von%20Deutschland))
+Graph routing and map visualization application (`Navi_P4.pro`) across German cities (`Ort.txt`):
+- **Routing:** Shortest-path calculation using **Dijkstra's algorithm** over modeled city, address, and POI nodes (`Ort`, `MyOrt`, `Adresse`, `POI`).
+- **Testing:** Built-in **Qt TestLib (`QTest`)** suite in `test.cpp`.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+### 4. Calculator ([`./Calculator`](./Calculator))
+Qt Widgets desktop calculator (`Calculatorrr.pro`) pairing UI forms (`mainwindow.ui`) with a custom angle functor (`anglefunctor`) and unit tests (`test.cpp` with `QTest`).
 
-## Test and Deploy
+### 5. Bibliothek ([`./Bibliothek`](./Bibliothek))
+C++17 OOP console system (`lj.pro`) demonstrating inheritance and polymorphism across `Medien` subclasses (`Buch`, `CD`, `Hoerbuch`), customer management (`Kunde`), and file persistence (`medien.txt`).
 
-Use the built-in continuous integration in GitLab.
+### 6. Python Projects ([`./Python`](./Python))
+- **`AutoComplete_App`:** Bigram word-prediction engine backed by **SQLite (`sqlite3`)** (`WordMap` & `WordPrediction` tables) with a `Tkinter` GUI (`frontend.py`, `backend.py`).
+- **`Face and eye Recognition`:** Real-time Haar-cascade face/eye detection via webcam and hand contour/convex-hull thresholding (`OpenCV` / `cv2`).
+- **`chatting_application`:** Multi-threaded TCP chat room built with Python `socket` and `threading` (`server.py`, `client.py`).
+- **`BlackJack_game` & `bitcoin_mining`:** Interactive console Blackjack gameplay/simulation and SHA-256 nonce-mining demonstration (`hashlib`).
+- **`Python Programs`:** Classic data-structure and recursion exercises (linked-list reversal, Tower of Hanoi, matrix transposition, sorting).
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+---
 
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Tech Stack
+- **Languages:** C++ (C++17), Dart, Python
+- **Frameworks & Libraries:** Qt (`Core`, `GUI`, `Widgets`, `Network`, `TestLib`), Flutter (`provider`, `hive_ce`, `qr_flutter`, `flutter_local_notifications`), `nlohmann/json`, OpenCV (`cv2`), Tkinter, SQLite3
+- **Engineering & CI:** Git, GitLab CI (`.gitlab-ci.yml`), Linux, QTest, `flutter_test`
