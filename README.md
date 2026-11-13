@@ -18,7 +18,7 @@ A curated portfolio of university and personal software engineering projects bui
 
 | Folder | Stack | Focus |
 |---|---|---|
-| [`./Fit4Life_Flutter`](./Fit4Life_Flutter) | Flutter, Dart, Provider, Hive | Full cross-platform fitness, nutrition & social app (standalone repo: [`Fit4Life_Flutter`](https://github.com/mohaziko/Fit4Life_Flutter)) |
+| [`./Fit4Life_Flutter`](./Fit4Life_Flutter) | Flutter, Dart, Provider, Hive | Full cross-platform fitness, nutrition & social app |
 | [`./Drachen`](./Drachen) | C++17, Qt Widgets, `QGraphicsScene`, `nlohmann/json` | Interactive map & dragon-flight travel planner with SVG layers and Haversine POI distances |
 | [`./Navigation von Deutschland`](./Navigation%20von%20Deutschland) | C++17, Qt Widgets, QTest | German city-graph route planner implementing Dijkstra's shortest-path algorithm + unit tests |
 | [`./Calculator`](./Calculator) | C++17, Qt Widgets, QTest | Desktop calculator with custom `anglefunctor` math evaluation and automated unit tests |
